@@ -610,17 +610,6 @@ dialog p{color:#ddd;font:400 13px/1.4 var(--mono);text-align:center;margin:.6rem
           <div class="field"><label for="f-firma">Firma</label><input id="f-firma" name="company" autocomplete="organization"></div>
           <div class="field"><label for="f-email">E-mail <span class="req">*</span></label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
           <div class="field"><label for="f-tel">Telefon</label><input id="f-tel" name="phone" type="tel" autocomplete="tel" placeholder="+420"></div>
-          <fieldset class="field full">
-            <legend>Typ zakázky</legend>
-            <label class="chip"><input type="checkbox" id="t-ai" name="typ" value="AI fotky"><span>AI fotky</span></label>
-            <label class="chip"><input type="checkbox" id="t-aivideo" name="typ" value="AI videa a reels"><span>AI videa a reels</span></label>
-            <label class="chip"><input type="checkbox" id="t-site" name="typ" value="Obsah na sociální sítě"><span>Obsah na sociální sítě</span></label>
-            <label class="chip"><input type="checkbox" id="t-kampan" name="typ" value="Kampaň před výrobou"><span>Kampaň před výrobou</span></label>
-            <label class="chip"><input type="checkbox" id="t-foto" name="typ" value="Klasické focení"><span>Klasické focení</span></label>
-            <label class="chip"><input type="checkbox" id="t-video" name="typ" value="Natáčení videa"><span>Natáčení videa</span></label>
-            <label class="chip"><input type="checkbox" id="t-akce" name="typ" value="Firemní akce"><span>Firemní akce</span></label>
-            <label class="chip"><input type="checkbox" id="t-jine" name="typ" value="Jiné"><span>Jiné</span></label>
-          </fieldset>
           <div class="field full"><label for="f-kdy">Kdy to potřebujete?</label><input id="f-kdy" name="kdy"></div>
           <div class="field full"><label for="f-popis">Popis projektu <span class="req">*</span></label><textarea id="f-popis" name="popis" required></textarea></div>
           <div class="full"><button class="btn" type="submit">Odeslat poptávku</button></div>
@@ -700,8 +689,6 @@ dialog p{color:#ddd;font:400 13px/1.4 var(--mono);text-align:center;margin:.6rem
     if(v('f-firma'))data.firma_g8x2ou=v('f-firma');
     if(v('f-tel'))data.telefon_gs1yoi=v('f-tel');
     if(v('f-kdy'))data.kdy_to_pot_ebujete_91ek18=v('f-kdy');
-    var typ=[].map.call(f.querySelectorAll('input[name=typ]:checked'),function(i){return i.value});
-    if(typ.length)data.typ_zak_zky_vflfqb=typ;
     btn.disabled=true;s.textContent='Odesílám…';
     var api='https://www.wixapis.com';
     fetch(api+'/oauth2/token',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({clientId:'44d3902e-1362-40fe-b6ba-b6381dcecc20',grantType:'anonymous'})})
