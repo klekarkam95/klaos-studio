@@ -15,7 +15,7 @@
 <link rel="canonical" href="https://klaos.cz/">
 <meta property="og:url" content="https://klaos.cz/">
 <meta property="og:image" content="https://klaos.cz/img/ai/mcws-k4-jantar-ruze.jpg">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "KLAOS studio", "url": "https://klaos.cz/", "description": "KLAOS studio tvoří pro firmy a značky AI fotky, AI videa a obsah na sociální sítě. Každý AI výstup je označený. Klasické focení a natáčení děláme taky.", "image": "https://klaos.cz/img/ai/mcws-k4-jantar-ruze.jpg", "areaServed": "CZ", "inLanguage": "cs"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "KLAOS studio", "url": "https://klaos.cz/", "description": "KLAOS studio tvoří pro firmy a značky AI fotky, AI videa a obsah na sociální sítě. Každý AI výstup je označený. Klasické focení a natáčení děláme taky.", "image": "https://klaos.cz/img/ai/mcws-k4-jantar-ruze.jpg", "areaServed": "CZ", "inLanguage": "cs", "sameAs": ["https://www.instagram.com/klaos_studio/"]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
@@ -256,6 +256,9 @@ section{padding-block:clamp(4rem,9vw,7rem);border-top:1px solid var(--line)}
 .contact dl{margin:0;display:grid;gap:1rem}
 .contact dt{font:500 12px/1.4 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .contact dd{margin:0;font-size:18px;font-weight:500;user-select:all}
+.contact dd.social{user-select:auto}
+.contact dd a{color:inherit;text-decoration:none;border-bottom:1px solid var(--line)}
+.contact dd a:hover{border-color:currentColor}
 form{grid-column:6/13;display:grid;grid-template-columns:1fr 1fr;gap:1.1rem 1.2rem}
 form .full{grid-column:1/-1}
 .field{display:flex;flex-direction:column;gap:.4rem;min-width:0}
@@ -603,6 +606,7 @@ dialog p{color:#ddd;font:400 13px/1.4 var(--mono);text-align:center;margin:.6rem
             <div><dt>E-mail</dt><dd>kamil@klaos.cz</dd></div>
             <div><dt>Telefon</dt><dd>+420 733 296 923</dd></div>
             <div><dt>Působnost</dt><dd>Celá Česká republika</dd></div>
+            <div><dt>Instagram</dt><dd class="social"><a href="https://www.instagram.com/klaos_studio/" target="_blank" rel="noopener">@klaos_studio</a></dd></div>
           </dl>
         </aside>
         <form id="poptavka-form" novalidate>
@@ -622,7 +626,7 @@ dialog p{color:#ddd;font:400 13px/1.4 var(--mono);text-align:center;margin:.6rem
 
 <footer>
   <div class="wrap">
-    <span>© KLAOS studio</span>
+    <span>© KLAOS studio · <a href="https://www.instagram.com/klaos_studio/" target="_blank" rel="noopener">Instagram</a></span>
     <span>Svatby a portréty najdete na <a href="https://www.kamilklekar.com">kamilklekar.com</a></span>
   </div>
 </footer>
