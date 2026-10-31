@@ -297,6 +297,8 @@ dialog video:not([hidden]){display:block;max-width:92vw;max-height:80vh}
 dialog.gal .lb-nav{display:block}
 #lb-prev{left:calc(12px + env(safe-area-inset-left,0px))}#lb-next{right:calc(12px + env(safe-area-inset-right,0px))}
 dialog p{color:#ddd;font:400 13px/1.4 var(--mono);text-align:center;margin:.6rem auto 0}
+.pitch:first-child{margin-top:0}
+.pitch .proj-row{margin-top:1rem}
 </style>
 </head>
 <body>
@@ -342,13 +344,8 @@ dialog p{color:#ddd;font:400 13px/1.4 var(--mono);text-align:center;margin:.6rem
 
   <section id="ai">
     <div class="wrap">
-      <div class="head">
-        <span class="label">AI obsah</span>
-        <h2>Ukázky AI fotek a videí</h2>
-        <p>Vybrané kampaně a koncepty. Všechny vizuály a videa v této části jsou vytvořené pomocí AI a takto označené.</p>
-      </div>
-        <div class="pitch">
-        <span class="label">Bergamoss · Mango Sticky Rice · AI</span>
+      <div class="pitch">
+        <span class="label">AI obsah · Bergamoss</span>
         <h2>Letní kampaň z <em>jedné fotky z mobilu</em></h2>
         <p>U letního parfému Mango Sticky Rice jsme vyšli z obyčejné fotky flakonu z mobilu. Rekvizity i studio jsou drahé, a tak jsme scény vytvořili pomocí AI: rychle, v rozumném rozpočtu a v prostředích, která by se jinak musela stavět.</p>
         <ul class="perks">
@@ -356,17 +353,12 @@ dialog p{color:#ddd;font:400 13px/1.4 var(--mono);text-align:center;margin:.6rem
           <li><b>Různé scény</b><span>Jeden flakon, víc prostředí: letní stůl, obývák plný rostlin i mramor s mangem.</span></li>
           <li><b>Reálné situace</b><span>Flakon v kabelce ukazuje, že parfém můžete mít pořád u sebe.</span></li>
         </ul>
-      </div>
-      <div class="projects">
-        <article class="proj">
-          <div class="proj-info"><h4>Bergamoss · Mango Sticky Rice</h4><p>Letní parfém, letní nálada. Všechny scény vycházejí z jedné fotky flakonu z mobilu.</p></div>
-          <div class="proj-row" style="--n:4">
+        <div class="proj-row" style="--n:4">
             <button data-full="img/ai/msr-ai-1.jpg"><img loading="lazy" src="img/ai/msr-ai-1-m.jpg" alt="AI vizuál: žlutý parfém Mango Sticky Rice na dřevěném stole ve stínu monstery"><span class="tag ai">AI vizuál</span></button>
             <button data-full="img/ai/msr-ai-2.jpg"><img loading="lazy" src="img/ai/msr-ai-2-m.jpg" alt="AI vizuál: parfém na dřevěném stolku v obývacím pokoji s rostlinami"><span class="tag ai">AI vizuál</span></button>
             <button data-full="img/ai/msr-ai-3.jpg"><img loading="lazy" src="img/ai/msr-ai-3-m.jpg" alt="AI vizuál: parfém mezi manga a kokosy na mramoru"><span class="tag ai">AI vizuál</span></button>
             <button data-full="img/ai/msr-ai-4.jpg"><img loading="lazy" src="img/ai/msr-ai-4-m.jpg" alt="AI vizuál: parfém v černé kožené kabelce"><span class="tag ai">AI vizuál</span></button>
           </div>
-        </article>
       </div>
       <article class="feature" style="margin-top:clamp(3rem,7vw,5rem)">
           <div class="vid">
